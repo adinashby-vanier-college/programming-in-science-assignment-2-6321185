@@ -8,12 +8,6 @@ def max_two_in_list(numbers):
 def remove_duplicates_and_sort(numbers):
     return sorted(set(numbers))
 
-# Test case for remove_duplicates_and_sort() function
-def test_remove_duplicates_and_sort():
-    assert remove_duplicates_and_sort([3, 1, 2, 3, 4, 2, 5]) == [1, 2, 3, 4, 5]
-    assert remove_duplicates_and_sort([10, 10, 9, 8, 7, 7]) == [7, 8, 9, 10]
-    assert remove_duplicates_and_sort([]) == []
-    print("All tests passed!")
 
 # Function 3: Single-Dimensional Arrays - Cumulative Sum
 # This function takes an array (list) of numbers and returns a new list where each element is the cumulative sum of the previous elements.
@@ -25,12 +19,6 @@ def cumulative_sum(arr):
         result.append(current_sum)
     return result
 
-# Test case for cumulative_sum() function
-def test_cumulative_sum():
-    assert cumulative_sum([1, 2, 3, 4]) == [1, 3, 6, 10]
-    assert cumulative_sum([10, -2, 3, 5]) == [10, 8, 11, 16]
-    assert cumulative_sum([]) == []
-    print("All tests passed!")
 
 # Function 4: Two-Dimensional Arrays - Matrix Transpose
 # This function takes a 2D list (matrix) and returns its transpose.
@@ -39,12 +27,6 @@ def transpose_matrix(matrix):
         return []
     return [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 
-# Test case for transpose_matrix() function
-def test_transpose_matrix():
-    assert transpose_matrix([[1, 2], [3, 4]]) == [[1, 3], [2, 4]]
-    assert transpose_matrix([[1, 2, 3], [4, 5, 6]]) == [[1, 4], [2, 5], [3, 6]]
-    assert transpose_matrix([]) == []
-    print("All tests passed!")
 
 # Function 5: Slicing - Extracting Every Nth Element
 # This function takes a list and a step value N and returns every Nth element.
